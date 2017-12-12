@@ -1,0 +1,1 @@
+# AzureFunction.Sample
