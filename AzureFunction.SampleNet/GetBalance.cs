@@ -16,7 +16,8 @@ namespace AzureFunction.SampleNet
         {
             log.Info("C# HTTP trigger function processed a request.");
 
-            var web3 = new Nethereum.Web3.Web3("https://mainnet.infura.io");
+            //Note: in this sample, a special INFURA API key is used: `7238211010344719ad14a89db874158c`. If you wish to use this sample in your own project you’ll need to [sign up on INFURA](https://infura.io/register) and use your own key.
+            var web3 = new Nethereum.Web3.Web3("https://mainnet.infura.io/v3/7238211010344719ad14a89db874158c");
             var balance = await web3.Eth.GetBalance.SendRequestAsync(address);
 
             // Fetching the name from the path parameter in the request URL
